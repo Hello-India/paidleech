@@ -499,14 +499,14 @@ SHOW_LIMITS_IN_STATS = SHOW_LIMITS_IN_STATS.lower() == 'true'
 START_BTN1_NAME = environ.get('START_BTN1_NAME', '')
 START_BTN1_URL = environ.get('START_BTN1_URL', '')
 if len(START_BTN1_NAME) == 0 or len(START_BTN1_URL) == 0:
-    START_BTN1_NAME = '❤️ Creator 🔥'
+    START_BTN1_NAME = 'Oᴡɴᴇʀ'
     START_BTN1_URL = 'https://t.me/itz_sahil_official'
 
 START_BTN2_NAME = environ.get('START_BTN2_NAME', '')
 START_BTN2_URL = environ.get('START_BTN2_URL', '')
 if len(START_BTN2_NAME) == 0 or len(START_BTN2_URL) == 0:
-    START_BTN2_NAME = '🌟 My Channel 🤩'
-    START_BTN2_URL = 'https://t.me/sahil_official_here'
+    START_BTN2_NAME = 'ᴜᴘᴅᴀᴛᴇꜱ'
+    START_BTN2_URL = 'https://t.me/BinaryQuest'
 
 BUTTON_FOUR_NAME = environ.get('BUTTON_FOUR_NAME', '')
 BUTTON_FOUR_URL = environ.get('BUTTON_FOUR_URL', '')
