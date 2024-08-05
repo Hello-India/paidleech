@@ -101,7 +101,7 @@ def stats(update, context):
                     f'<b>├  Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
                     f'<b>├  Disk Free:</b> {free}\n'\
                     f'<b>├  Upload Data:</b> {sent}\n'\
-                    f'<b>╰  Download Data:</b> {recv}\n\n'
+                    f'<b>╰  Download Data:</b> {recv}\n\n\nPᴏᴡᴇʀᴇᴅ ʙʏ @BinaryQuest'
 
 
 
@@ -131,7 +131,7 @@ def stats(update, context):
                      f'<b>├ ♻️ Clone: </b>{clone_limit}\n'\
                      f'<b>├ 🔰 Mega: </b>{mega_limit}\n'\
                      f'<b>├ 💣 Total Tasks: </b>{total_task}\n'\
-                     f'<b>╰ 🔫 User Tasks: </b>{user_task}\n\n'
+                     f'<b>╰ 🔫 User Tasks: </b>{user_task}\n\n\n Pᴏᴡᴇʀᴇᴅ ʙʏ @BinaryQuest'
         else: 
             stats += f'<b>╭─《 ⚠️ BOT LIMITS ⚠️ 》</b>\n'\
                      f'<b>├  Torrent/Direct: </b>{torrent_direct}\n'\
@@ -140,7 +140,7 @@ def stats(update, context):
                      f'<b>├  Clone: </b>{clone_limit}\n'\
                      f'<b>├  Mega: </b>{mega_limit}\n'\
                      f'<b>├  Total Tasks: </b>{total_task}\n'\
-                     f'<b>╰  User Tasks: </b>{user_task}\n\n'
+                     f'<b>╰  User Tasks: </b>{user_task}\n\n\nPᴏᴡᴇʀᴇᴅ ʙʏ @BinaryQuest'
 
     if config_dict['PICS']:
         sendPhoto(stats, context.bot, update.message, rchoice(config_dict['PICS']))
@@ -431,7 +431,7 @@ def main():
                 msg += f"📅 DATE: {date}\n"
                 msg += f"⌚ TIME: {time}\n"
                 msg += f"🌐 TIMEZONE: {timez}\n"
-                msg += f"🤖 VERSION: {version}"
+                msg += f"🤖 VERSION: {version}\n\nPᴏᴡᴇʀᴇᴅ ʙʏ @BinaryQuest"
 
                 for tag, links in data.items():
                     msg += f"\n{tag}: "
@@ -470,7 +470,7 @@ def main():
             msg += f"📅 DATE: {date}\n"
             msg += f"⌚ TIME: {time}\n"
             msg += f"🌐 TIMEZONE: {timez}\n"
-            msg += f"🤖 VERSION: {version}"            
+            msg += f"🤖 VERSION: {version}\n\nPᴏᴡᴇʀᴇᴅ ʙʏ @BinaryQuest"            
             bot.edit_message_text(msg, chat_id, msg_id)
         except Exception as e:
             LOGGER.info(e)
